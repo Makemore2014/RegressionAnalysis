@@ -10,7 +10,13 @@ y = a + bx + c(残差)
 # 回归系数的估计
 线性模型中最重要的就是在给定的数据下，如何求得线性模型的回归系数，即上式中的a和b。统计学中通过最小二乘法求得线性回归系数的估计值，其基本思想就是在模型的随机误差平方和最小的情况下 **通过最小化每个数据点到线的垂直偏差平方和来计算最佳拟合线（回归线）**，最终求出alpha2、alpha1。
 # 数学原理解析
+
 ![](https://github.com/Makemore2014/RegressionAnalysis/blob/master/pic/math1.png)
 # 数据差异总离差
 总离差可以分解为两部分：一部分来自回归直线，是由因变量引起的变动，另一部分则来自随机因素的影响。
+![](https://github.com/Makemore2014/RegressionAnalysis/blob/master/pic/math2.png)
+如果样本观测点与回归直线越接近，回归平方和SSA所在总离差平方和SST的比重就会越大，进一步说明在回归方程的总变动中，自由变量引起的变动占了很大的比重。因此可以引入新的度量指标判定系统：SSA/SST。
+# 判定系数拟合度
+判定系数检验样本数据集在回归直线周围的密度程度，并以此判断回归方程对样本数据的拟合程度，用来衡量方程的可靠性。
+![](https://github.com/Makemore2014/RegressionAnalysis/blob/master/pic/math3.png)
 
